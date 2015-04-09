@@ -65,12 +65,12 @@
 
         <div class="panel panel-default col-md-12">
             <div class="panel-body">
-                <div class="col-md-10">
+                <div class="col-md-9">
                     <form class="form-horizontal">
                         <div class="form-group">
-                            <label for="nombre" class="col-sm-1 control-label">nombre</label>
+                            <label for="nombreusu" class="col-sm-1 control-label">nombre</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="nombre" placeholder="nombre">
+                                <input type="text" class="form-control" id="nombreusu" placeholder="nombre">
                             </div>
                         </div>
                         <div class="form-group">
@@ -93,8 +93,75 @@
                         </div>
                     </form>
                 </div>
-                <div class="col-md-2 pull-right">
-                    <input class="btn btn-default" type="button" value="nuevo">
+                <div class="col-md-3 pull-right">
+                    <button type="button" class="btn btn-default" data-toggle="modal" data-target=".bs-example-modal-lg">nuevo usuario</button>
+                    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h4 class="modal-title">Nuevo usuario</h4>
+                                </div>
+                                <div class="container">
+                                    <div class="form-group col-lg-6 col-md-6">
+                                        <label for="nombre">Nombre</label>
+                                        <input type="text" class="form-control" id="nombre">
+                                    </div>
+
+                                    <div class="clearfix"> </div>
+
+                                    <div class="form-group col-lg-6 col-md-6">
+                                        <label for="login">Login</label>
+                                        <input type="text" class="form-control" id="login">
+                                    </div>
+
+                                    <div class="clearfix"> </div>
+
+                                    <div class="form-group col-lg-6 col-md-6">
+                                        <label for="clave">Password</label>
+                                        <input type="password" class="form-control" id="clave">
+                                    </div>
+
+                                    <div class="clearfix"> </div>
+
+                                    <div class="form-group col-lg-6 col-md-6">
+                                        <label for="email">email</label>
+                                        <input type="email" class="form-control" id="email">
+                                    </div>
+
+                                    <div class="clearfix"> </div>
+
+                                    <div class="form-group col-lg-6 col-md-6">
+                                        <label for="telefono">Telefono</label>
+                                        <input type="text" class="form-control" id="telefono">
+                                    </div>
+
+                                    <div class="clearfix"> </div>
+
+                                    <div class="form-group col-lg-6 col-md-6">
+                                        <label>Administrador&nbsp;&nbsp;<input type="checkbox"></label>
+                                    </div>
+
+                                    <div class="clearfix"> </div>
+
+                                    <div class="form-group col-lg-6 col-md-6">
+                                        <label>Activo&nbsp;&nbsp;<input type="checkbox"></label>
+                                    </div>
+
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                        <button type="submit" class="btn btn-default">Guardar</button>
+                                        <button type="submit" class="btn btn-default">Cancelar</button>
+                                        <br>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--   fin de boton nuevo   -->
+
                     <input class="btn btn-default" type="button" value="buscar">
                 </div>
             </div>
@@ -262,24 +329,24 @@
 
 
     <!-- build:js scripts/main.js -->
-    <script src="bower_components/jquery/jquery.js"></script>
-    <script src="scripts/main.js"></script>
-    <script src="scripts/hello.js"></script>
+    <script src="../bower_components/jquery/jquery.js"></script>
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/hello.js"></script>
     <!-- endbuild -->
 
     <!-- build:js scripts/vendor/bootstrap.js -->
-    <script src="bower_components/bootstrap/js/affix.js"></script>
-    <script src="bower_components/bootstrap/js/alert.js"></script>
-    <script src="bower_components/bootstrap/js/dropdown.js"></script>
-    <script src="bower_components/bootstrap/js/tooltip.js"></script>
-    <script src="bower_components/bootstrap/js/modal.js"></script>
-    <script src="bower_components/bootstrap/js/transition.js"></script>
-    <script src="bower_components/bootstrap/js/button.js"></script>
-    <script src="bower_components/bootstrap/js/popover.js"></script>
-    <script src="bower_components/bootstrap/js/carousel.js"></script>
-    <script src="bower_components/bootstrap/js/scrollspy.js"></script>
-    <script src="bower_components/bootstrap/js/collapse.js"></script>
-    <script src="bower_components/bootstrap/js/tab.js"></script>
+    <script src="../bower_components/bootstrap/js/affix.js"></script>
+    <script src="../bower_components/bootstrap/js/alert.js"></script>
+    <script src="../bower_components/bootstrap/js/dropdown.js"></script>
+    <script src="../bower_components/bootstrap/js/tooltip.js"></script>
+    <script src="../bower_components/bootstrap/js/modal.js"></script>
+    <script src="../bower_components/bootstrap/js/transition.js"></script>
+    <script src="../bower_components/bootstrap/js/button.js"></script>
+    <script src="../bower_components/bootstrap/js/popover.js"></script>
+    <script src="../bower_components/bootstrap/js/carousel.js"></script>
+    <script src="../bower_components/bootstrap/js/scrollspy.js"></script>
+    <script src="../bower_components/bootstrap/js/collapse.js"></script>
+    <script src="../bower_components/bootstrap/js/tab.js"></script>
     <!-- endbuild -->
 </body>
 
