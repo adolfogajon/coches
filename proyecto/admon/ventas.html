@@ -1,0 +1,260 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ventas</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" href="../styles/main.css">
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="../bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Empresa</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="vehiculos.html">Vehículos</a>
+                    </li>
+                    <li><a href="reservas.html">Reservas</a>
+                    </li>
+                    <li><a href="ventas.html">Ventas</a>
+                    </li>
+                    <li><a href="clientes.html">Clientes</a>
+                    </li>
+                    <li><a href="usuarios.html">Usuarios</a>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="login.html">Cerrar sesión <i class="glyphicon glyphicon-log-out">&nbsp;</i></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <section>
+        <h1>Ventas</h1>
+        <div id="cuerpo" class="container-fluid">
+            <div class="panel panel-default col-md-12">
+                <div class="panel-body">
+                    <div class="col-md-9">
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <label for="nombre" class="col-sm-1 control-label">Venta</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="nombre" placeholder="nombre">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-3 pull-right">
+                        <!--       boton nuevo      -->
+
+                        <button type="button" class="btn btn-default" data-toggle="modal" data-target=".bs-example-modal-lg">Nueva Venta</button>
+
+                        <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <h4 class="modal-title">Nueva venta</h4>
+                                    </div>
+                                    <div class="container">
+                                        <div class="form-group col-lg- col-md-6">
+                                            <label for="cliente">Cliente</label>
+                                            <select id="cliente" class="form-control">
+                                                <option>Alfredo Gajón</option>
+                                                <option>Gloria Fuertes</option>
+                                                <option>Esther Colero</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="clearfix"> </div>
+
+                                        <div class="form-group col-lg-6 col-md-6">
+                                            <label for="vendedor">Vendedor</label>
+                                            <select id="vendedor" class="form-control">
+                                                <option>Paco Pil</option>
+                                                <option>Bustín StClaire</option>
+                                                <option>Carlos Arturo</option>
+                                                <option>Pili Manili</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="clearfix"> </div>
+                                        <div class="form-group col-lg-6 col-md-6">
+                                            <label for="vehículo">Vehículo</label>
+                                            <select id="vehículo" class="form-control">
+                                                <option>5487dsf</option>
+                                                <option>5499fgr</option>
+                                                <option>9885fhr</option>
+                                                <option>2812bbg</option>
+                                                <option>8127jhj</option>
+                                            </select>
+                                        </div>
+                                        <div class="clearfix"> </div>
+
+                                        <div class="form-group col-lg-6 col-md-6">
+                                            <label for="precioventa">PVP venta</label>
+                                            <input type="email" class="form-control" id="precioventa">
+                                        </div>
+
+                                        <div class="col-sm-offset-2 col-sm-10">
+                                            <button type="submit" class="btn btn-default">Guardar</button>
+                                            <button type="submit" class="btn btn-default">Cancelar</button>
+                                            <br>
+                                            <br>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!--   fin de boton nuevo   -->
+                        <input class="btn btn-default" type="button" value="Buscar">
+                    </div>
+                </div>
+            </div>
+            <table class="table table-bordered table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>Nº Venta <a href="#"><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></a>
+                        </th>
+                        <th>Cliente <a href="#"><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></a>
+                        </th>
+                        <th>Vehículo <a href="#"><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></a>
+                        </th>
+                        <th>Vendedor <a href="#"><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></a>
+                        </th>
+                        <th>PVP Venta</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0001</td>
+                        <td>Adolfo Gajon</td>
+                        <td>8578hhg</td>
+                        <td>Paco Pil</td>
+                        <td>2300€</td>
+                    </tr>
+                    <tr>
+                        <td>0002</td>
+                        <td>Adolfo Gajon</td>
+                        <td>8578hhg</td>
+                        <td>Paco Pil</td>
+                        <td>2300€</td>
+                    </tr>
+                    <tr>
+                        <td>0003</td>
+                        <td>Adolfo Gajon</td>
+                        <td>8578hhg</td>
+                        <td>Paco Pil</td>
+                        <td>2300€</td>
+                    </tr>
+                    <tr>
+                        <td>0004</td>
+                        <td>Adolfo Gajon</td>
+                        <td>8578hhg</td>
+                        <td>Paco Pil</td>
+                        <td>2300€</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="pager">
+                <div class="btn-group">
+                    <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-fast-backward" aria-hidden="true"></span>
+                    </button>
+                    <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span>
+                    </button>
+                    <button class="btn btn-default" type="button">1</button>
+                    <button class="btn btn-default active" type="button">2</button>
+                    <button class="btn btn-default" type="button">3</button>
+                    <button class="btn btn-default" type="button">4</button>
+                    <button class="btn btn-default" type="button">...</button>
+                    <button class="btn btn-default" type="button">10</button>
+                    <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-step-forward" aria-hidden="true"></span>
+                    </button>
+                    <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-fast-forward" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        Último inicio de sesión: 29 de febrero de 2015
+    </footer>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function (b, o, i, l, e, r) {
+            b.GoogleAnalyticsObject = l;
+            b[l] || (b[l] =
+                function () {
+                    (b[l].q = b[l].q || []).push(arguments)
+                });
+            b[l].l = +new Date;
+            e = o.createElement(i);
+            r = o.getElementsByTagName(i)[0];
+            e.src = '//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e, r)
+        }(window, document, 'script', 'ga'));
+        ga('create', 'UA-XXXXX-X');
+        ga('send', 'pageview');
+    </script>
+
+
+    <!-- build:js scripts/main.js -->
+    <script src="../bower_components/jquery/jquery.js"></script>
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/hello.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/bootstrap.js -->
+    <script src="../bower_components/bootstrap/js/affix.js"></script>
+    <script src="../bower_components/bootstrap/js/alert.js"></script>
+    <script src="../bower_components/bootstrap/js/dropdown.js"></script>
+    <script src="../bower_components/bootstrap/js/tooltip.js"></script>
+    <script src="../bower_components/bootstrap/js/modal.js"></script>
+    <script src="../bower_components/bootstrap/js/transition.js"></script>
+    <script src="../bower_components/bootstrap/js/button.js"></script>
+    <script src="../bower_components/bootstrap/js/popover.js"></script>
+    <script src="../bower_components/bootstrap/js/carousel.js"></script>
+    <script src="../bower_components/bootstrap/js/scrollspy.js"></script>
+    <script src="../bower_components/bootstrap/js/collapse.js"></script>
+    <script src="../bower_components/bootstrap/js/tab.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>
