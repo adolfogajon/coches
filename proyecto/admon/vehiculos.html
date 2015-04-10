@@ -36,8 +36,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="vehiculos.html">Vehículos</a>
-                    </li>
+                    <li class="active"><a href="#">Vehículos <span class="sr-only">(current)</span></a></li>
                     <li><a href="reservas.html">Reservas</a>
                     </li>
                     <li><a href="ventas.html">Ventas</a>
@@ -58,9 +57,9 @@
         <!-- /.container-fluid -->
     </nav>
 
-<section>
+<div id="cuerpo">
 
-    <div id="cuerpo" class="container-fluid">
+    <div class="container-fluid">
         <h1>Gestión de Vehículos</h1>
 
         <div class="panel panel-default col-md-12">
@@ -166,7 +165,7 @@
                      <th>Editar
                     </th>                 
                     <th>Eliminar</th>
-                    <th>Añadir imagen</th>
+                    <th>Imágenes</th>
                    
                     </tr>
             </thead>
@@ -289,6 +288,67 @@
 					<label for="descripcion">Descripcion</label>
 					<textarea id="descripcion" class="form-control" placeholder="Descripción" rows="4"></textarea>
 					<br>
+					<div class="clearfix"></div>
+           <h4>Gestión de Imágenes</h4>
+            <table class="table table-bordered table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>Archivo <a href="#"><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></a>
+                        </th>
+                        <th>Descripción <a href="#"><span class="glyphicon glyphicon-sort" aria-hidden="true"></span></a>
+                        </th>
+                        <th>Principal</th>
+                        <th>Editar</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0001</td>
+                        <td>Adolfo Gajon</td>
+                        <td class="text-center">
+                        <input type="checkbox">
+                    </td>
+                        <td class="text-center"><a href="#"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                    </td>
+                    <td class="text-center"><a href="#"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td>0002</td>
+                        <td>Adolfo Gajon</td>
+                        <td class="text-center">
+                        <input type="checkbox">
+                    </td>
+                        <td class="text-center"><a href="#"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                    </td>
+                    <td class="text-center"><a href="#"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td>0003</td>
+                        <td>Adolfo Gajon</td>
+                        <td class="text-center">
+                        <input type="checkbox">
+                    </td>
+                        <td class="text-center"><a href="#"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                    </td>
+                    <td class="text-center"><a href="#"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td>0004</td>
+                        <td>Adolfo Gajon</td>
+                        <td class="text-center">
+                        <input type="checkbox">
+                    </td>
+                        <td class="text-center"><a href="#"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                    </td>
+                    <td class="text-center"><a href="#"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></a>
+                    </td>
+                    </tr>
+                </tbody>
+            </table>
 					<div class="pull-right">
 					<button type="submit" class="btn btn-default">Guardar</button>
 					<button type="submit" class="btn btn-default">Cancelar</button>
